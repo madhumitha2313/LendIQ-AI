@@ -1,5 +1,7 @@
                                                                       LendIQ
 
+https://lend-iq-brown.vercel.app/ 
+
 Smarter Lending Decisions Powered by Explainable AI
 A production-grade, enterprise-style FinTech SaaS loan-approval platform. Predicts loan approvals with an XGBoost model, explains every decision with SHAP, authenticates with Firebase, and works end-to-end with zero backend thanks to an in-browser scoring engine.
 
@@ -42,14 +44,13 @@ Quick start :
 Option A — full stack, one command (UI + real XGBoost backend)
 npm run setup     # installs deps, trains the model, writes frontend/.env
 npm run dev       # runs FastAPI (:8000) + React (:5173) together
-Frontend → http://localhost:5173
-API → http://127.0.0.1:8000 (interactive docs at /docs)
+Frontend , API (interactive docs at /docs)
 The React app is wired to the FastAPI service, so predictions and SHAP values come from the real trained XGBoost model. Sign up with any email.
 
 Option B — frontend only (works on its own — demo auth + Edge Engine)
 cd frontend
 npm install
-npm run dev          # http://localhost:5173
+npm run dev         
 Open the app, sign up with any email (stored locally in demo mode) and explore. Visit Analytics → Generate demo data to populate the dashboards. With no backend configured, predictions use the in-browser Edge Engine.
 
 Option C — zero-setup single-file preview
